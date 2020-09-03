@@ -13,7 +13,7 @@
       type: `EditEnvironment`,
       name: `BRIDGE_SETUPID`,
       initValue: `{{__RANDOMHEX(4)}}`,
-      id: 'setupid',
+      id: `setupid`,
       visible: false
     },
     {
@@ -21,7 +21,7 @@
       description: `Pin used to add this device to your network using the Home app`,
       name: `BRIDGE_PIN`,
       initValue: `111-11-111`,
-      id: 'pin'
+      id: `pin`
     },
     {
       type: `Header`,
@@ -66,12 +66,24 @@
       name: `THRESHOLD`,
       defaultValue: `4.5`
     },
-
     {
       type: `EditEnvironment`,
       description: `Reset`,
       name: `RESET`,
       defaultValue: `0.5`
+    },
+    {
+      type: `Header`,
+      title: `Homekit Code`
+    },
+    {
+      type: `Text`,
+      text: ``,
+      id: `qrcode`
+    },
+    {
+      type: `Script`,
+      include: `qrcode`
     },
     {
       type: `Script`,
@@ -105,7 +117,7 @@
       type: `Port`,
       name: `51826/tcp`,
       port: 51826,
-      protocol: 'TCP'
+      protocol: `TCP`
     },
     {
       type: `Network`,
@@ -156,12 +168,12 @@
     {
       type: `Directory`,
       name: `/root/homebridge`,
-      style: 'boot'
+      style: `boot`
     },
     {
       type: `Directory`,
       name: `/root/rsudp/screenshots`,
-      style: 'store',
+      style: `store`,
       shares: [
         {
           name: `/`,
