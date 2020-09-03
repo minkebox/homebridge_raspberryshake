@@ -30,7 +30,7 @@ A full explaination of how to change these can be found at https://raspishake.gi
 
 ## Receiving data from your Raspberry Shake
 
-Data is send, using UDP port 8888, from your Raspberry Shake to this application. The Shake should use the *Datacast*
+Data is sent, using UDP port 8888, from your Raspberry Shake to this application. The Shake should use the *Datacast*
 feature (see https://manual.raspberryshake.org/udp.html).
 
 ## Why?
