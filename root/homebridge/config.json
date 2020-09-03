@@ -1,0 +1,19 @@
+{
+  "bridge": {
+    "name": "Raspberry Shake",
+    "username": "0A:34:52:83:88:1A",
+    "port": 51826,
+    "pin": "111-11-111",
+    "setupID": "BRIDGE_SETUPID"
+  },
+  "description": "",
+  "accessories": [
+    {
+      "accessory": "http-motion-sensor",
+      "name": "Earthquake Detected",
+      "port": 8889,
+      "bind_ip": "127.0.0.1"
+    }
+  ],
+  "platforms": []
+}
