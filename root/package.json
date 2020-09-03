@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "homebridge": "*",
+    "homebridge-http-motion-sensor": "*"
+  }
+}
