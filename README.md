@@ -8,7 +8,7 @@ To simplify the integration of the Raspberry Shake earthquake monitoring code an
 is wrapped up in a simple to run Docker image. To run using Docker simply type:
 
 ```
-docker run --network host registry.minkebox.net/minkebox/homebridge_raspberryshake
+docker run --network host -v ${HOME}/shake:/root/homebridge registry.minkebox.net/minkebox/homebridge_raspberryshake
 ```
 
 ## Configuration
