@@ -141,9 +141,11 @@ dbus-daemon --system
 /usr/sbin/avahi-daemon -D
 /root/node_modules/homebridge/bin/homebridge --user-storage-path /root/homebridge --plugin-path /root/plugins &
 
+/sbin/syslogd
+
 . /opt/conda/etc/profile.d/conda.sh
 conda activate rsudp
-rs-client &
+(rs-client 2>&1 | /usr/bin/logger) &
 
 sleep 2147483647d &
 wait "$!"
