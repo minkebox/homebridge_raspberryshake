@@ -70,7 +70,7 @@ cat > /root/.config/rsudp/rsudp_settings.json << __EOF__
     "channels": ["all"]
   },
   "plot": {
-    "enabled": true,
+    "enabled": false,
     "duration": 30,
     "spectrogram": true,
     "fullscreen": false,

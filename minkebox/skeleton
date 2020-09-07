@@ -169,17 +169,6 @@
       type: `Directory`,
       name: `/root/homebridge`,
       style: `boot`
-    },
-    {
-      type: `Directory`,
-      name: `/root/rsudp/screenshots`,
-      style: `store`,
-      shares: [
-        {
-          name: `/`,
-          description: `Screenshots`
-        }
-      ]
     }
   ]
 }
